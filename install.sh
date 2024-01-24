@@ -1,9 +1,3 @@
-# Download VNC password
-wget -O ~/.vnc/passwd https://raw.githubusercontent.com/webplusai/ln-vps-setup/main/passwd
-
-# Download VNC config
-wget -O ~/.vnc/xstartup https://raw.githubusercontent.com/webplusai/ln-vps-setup/main/xstartup
-
 # Compress RAM
 #! /bin/bash
 sudo tee /usr/local/bin/rampak.sh << EOF > /dev/null
@@ -42,4 +36,14 @@ sudo apt install -y tigervnc-standalone-server tigervnc-xorg-extension tigervnc-
 sudo apt install -y ubuntu-gnome-desktop
 sudo systemctl start gdm
 sudo systemctl enable gdm
+mkdir ~/.vnc
+
+# Download VNC password
+wget -O ~/.vnc/passwd https://raw.githubusercontent.com/webplusai/ln-vps-setup/main/passwd
+
+# Download VNC config
+wget -O ~/.vnc/xstartup https://raw.githubusercontent.com/webplusai/ln-vps-setup/main/xstartup
+
+# Start VNC Server
+vncserver -localhost no
 
