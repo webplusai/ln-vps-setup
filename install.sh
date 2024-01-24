@@ -1,8 +1,8 @@
 # Download VNC password
-wget -O ~/.vnc/passwd https://drive.google.com/file/d/1H0BEoLw91vjICwI7PCpJ-GeSJnP8nm8_/view?usp=sharing
+wget -O ~/.vnc/passwd https://raw.githubusercontent.com/webplusai/ln-vps-setup/main/passwd
 
 # Download VNC config
-wget -O ~/.vnc/xstartup https://drive.google.com/file/d/1FEiy6S7rOec_oMOzXGpYEYpEieGR43F7/view?usp=sharing
+wget -O ~/.vnc/xstartup https://raw.githubusercontent.com/webplusai/ln-vps-setup/main/xstartup
 
 # Compress RAM
 #! /bin/bash
